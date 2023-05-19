@@ -29,7 +29,7 @@ jobs:
           # 这些sectret的环境变量需要配置在setting中的secret下
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
-          subject: 天气预报小时 file://result.html (${{env.REPORT_DATE}}) 
+          subject: 天气预报小时 (${{env.REPORT_DATE}}) 
           html_body: file://result.html
           to: 1192255165@qq.com
           from: GitHub Actions
